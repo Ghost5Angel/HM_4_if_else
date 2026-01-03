@@ -71,7 +71,7 @@ public class Main {
                     countPeople);
         }
 
-        System.out.println("Задача 7");
+        System.out.println("Задача 7 ");
         int one = 4;
         int two = 44;
         int three = 3;
