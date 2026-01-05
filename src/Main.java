@@ -30,25 +30,24 @@ public class Main {
         }
         System.out.println("Задача 4");
         int agePeople = 21;
-        if (agePeople > 2 && agePeople < 6) {
+        if (agePeople >= 2 && agePeople <= 6) {
             System.out.println("Если возраст человека равен " + agePeople +
                     " то ему нужно ходить в детский сад.");
-        } else if (agePeople > 7 && agePeople < 17){
+        } else if (agePeople >= 7 && agePeople <= 17){
             System.out.println("Если возраст человека равен " + agePeople +
                     " то ему нужно ходить в школу.");
         } else if (agePeople >= 18 && agePeople <= 24){
             System.out.println("Если возраст человека равен " + agePeople +
                     " то ему нужно ходить в университет.");
         } else if (agePeople > 24){
-            System.out.println("Если возраст человека равен " + agePeople +
-                    " то ему нужно ходить на работу.");
+            System.out.println("Если возраст человека равен " + agePeople + " то ему нужно ходить на работу.");
         }
         System.out.println("Задача 5");
         int ageChild = 16;
-        if (ageChild < 5) {
+        if (ageChild <= 5) {
             System.out.println("Если возраст ребенка равен " + ageChild +
                     " то ему нельзя кататься на аттракционе.");
-        } else if (ageChild > 5 && ageChild < 14){
+        } else if (ageChild > 5 && ageChild <= 14){
             System.out.println("Если возраст человека равен " + ageChild +
                     " то ему можно кататься на аттракционе в сопровождении.");
         } else if (ageChild > 14){
@@ -74,10 +73,11 @@ public class Main {
         System.out.println("Задача 7 ");
         int one = 4;
         int two = 44;
-        int three = 3;
-        if (one > two && one > three){
+        int three = 454;
+        int max = Math.max(one, Math.max(two, three));
+        if (max == one){
             System.out.println("Первое число самое большое и оно равно = " + one);
-        } else if (two > one && two > three){
+        } else if (max == two){
             System.out.println("Второе число самое большое и оно равно = " + two);
         } else {
             System.out.println("Третье число самое большое и оно равно = " + three);
